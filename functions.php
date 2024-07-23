@@ -19,13 +19,23 @@ function my_custom_block_styles() {
     );
 
     register_block_style(
-        'core/image',
+        array( 'core/image' ),
         array(
             'name'         => 'red-border',
             'label'        => __( 'Red Border', 'plain-pauli' ),
-            'style_handle' => 'my-image-block-style'
+            'style_data'=> array(
+                'blocks' => array(
+                    'core/image'=> array(
+                        'border-color' => '#a83254',
+                        'border-width' => '2px',
+                        'border-style' => 'solid',
+                        'border-radius' => '15px',
+                        'shadow' => 'var(--wp--preset--shadow--sharp)'
+                        )
 
-        )
-    );
+                    )
+              )
+            )
+        );
 }
 add_action( 'init', 'my_custom_block_styles' );
