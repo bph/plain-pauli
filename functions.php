@@ -26,11 +26,15 @@ function my_custom_block_styles() {
             'style_data'=> array(
                 'blocks' => array(
                     'core/image'=> array(
-                        'border-color' => '#a83254',
-                        'border-width' => '2px',
-                        'border-style' => 'solid',
-                        'border-radius' => '15px',
-                        'shadow' => 'var(--wp--preset--shadow--sharp)'
+                        'border' => array(
+                            'color' => '#00f9ff',
+                             'style' => 'solid',
+                             'width' => '4px',
+                             'radius' => '15px'
+                            ),
+			            'shadow'=> array(
+                            'var(--wp--preset--shadow--natural)'
+                        )
                         )
 
                     )
