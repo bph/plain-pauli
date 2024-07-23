@@ -24,16 +24,14 @@ function my_custom_block_styles() {
             'name'         => 'red-border',
             'label'        => __( 'Red Border', 'plain-pauli' ),
             'style_data'=> array(
-                'blocks' => array(
-                    'core/image'=> array(
-                        'border' => array(
-                            'color' => '#00f9ff',
+                            'border' => array(
+                            'color' => '#cf2e2e',
                              'style' => 'solid',
                              'width' => '4px',
                              'radius' => '15px'
                             ),
-			            'shadow'=> array(
-                            'var(--wp--preset--shadow--natural)'
+			            'shadow' => array(
+                            'var(--wp--preset--shadow--sharp)'
                         )
                         )
 
