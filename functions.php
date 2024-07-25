@@ -36,8 +36,8 @@ function my_custom_block_styles() {
                         )
 
                     )
-              )
-            )
-        );
+                        )
+
 }
+
 add_action( 'init', 'my_custom_block_styles' );
