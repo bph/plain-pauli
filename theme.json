@@ -26,7 +26,34 @@
 		},
 		"useRootPaddingAwareAlignments": true
 	},
-	
+	"styles": {
+		"blocks": {
+			"core/image":{
+				"variations": {
+					"red-border":{
+						"border": {
+								"color":"#cf2e2e",
+								"style": "solid",
+								"width": "4px",
+								"radius":"15px"
+						}
+					}
+				}
+			},
+			"core/button": {
+				"variations": {
+					"outline": {
+						"border": {
+							"color": "blue",
+							"radius": "0",
+							"style": "solid",
+							"width": "3px"
+						}
+					}
+				}
+			}
+		}
+	},
 	"templateParts": [
 		{
 			"area": "header",
@@ -38,5 +65,5 @@
 		}
 	],
 	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.5/theme.json"
+	"$schema": "https://schemas.wp.org/trunk/theme.json"
 }
