@@ -14,3 +14,7 @@ Text Domain: plain-pauli
 Tags: 
 */
 
+.is-style-black-border img{
+    border: 15px ridge black;
+}
+

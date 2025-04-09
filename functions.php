@@ -22,7 +22,7 @@ add_action( 'init', 'my_style_red' );
 function pauli_block_editor_scripts() {
 	    wp_enqueue_script( 
             'pauli-editor', 
-            get_theme_file_uri( '/js/block-styles.js' ), 
+            get_theme_file_uri( '/js/curate-core.js' ), 
             array( 'wp-blocks', 'wp-dom' ), 
             wp_get_theme()->get( 'Version' ), true 
         );
