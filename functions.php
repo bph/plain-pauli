@@ -6,11 +6,11 @@ function pauli_support() {
     add_editor_style( 'style.css ');
 }
 
-add_action( 'after_setup_theme', 'pauli-support' );
+add_action( 'after_setup_theme', 'pauli_support' );
 
 
 
-function my_style_red(){
+function my_style_red() {
 
     register_block_style(
         'core/image',
