@@ -13,4 +13,4 @@ wp.domReady( function() {
 
 } );
 
-console.log('curate-core loaded')
+//console.log('curate-core loaded')

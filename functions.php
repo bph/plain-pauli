@@ -1,5 +1,15 @@
 <?php
 
+//add style.css to the block editor. 
+function pauli_support() {
+
+    add_editor_style( 'style.css ');
+}
+
+add_action( 'after_setup_theme', 'pauli-support' );
+
+
+
 function my_style_red(){
 
     register_block_style(
@@ -29,3 +39,15 @@ function pauli_block_editor_scripts() {
         }
         
 add_action( 'enqueue_block_editor_assets', 'pauli_block_editor_scripts' );
+
+
+// add style.css to the front end. 
+function enqueue_theme_styles() {
+    wp_enqueue_style(
+        'my-theme-styles',
+        get_stylesheet_uri(), // This gets your style.css
+        array(),
+        wp_get_theme()->get( 'Version' )
+    );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_theme_styles' );
