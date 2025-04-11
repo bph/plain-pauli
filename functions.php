@@ -1,15 +1,5 @@
 <?php
 
-//add style.css to the block editor. 
-function pauli_support() {
-
-    add_editor_style( 'style.css ');
-}
-
-add_action( 'after_setup_theme', 'pauli_support' );
-
-
-
 function my_style_red() {
 
     register_block_style(
@@ -51,3 +41,9 @@ function enqueue_theme_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_theme_styles' );
+
+//add style.css to editor
+function add_theme_editor_styles() {
+    add_editor_style( 'style.css' );
+}
+add_action( 'after_setup_theme', 'add_theme_editor_styles' );
