@@ -2,8 +2,45 @@
 	"meta": {
 		"title": "Editing Themes via site editor",
 		"author": "bph",
-		"description": "A blueprint to install create-block-theme and gutenberg plugins",
-		"categories": ["plugins"]
+		"description": "A blueprint to install create-block-theme and gutenberg plugins and activate plain-pauli theme",
+		"categories": ["plugins", "themes"]
 	},
-	"plugins": ["gutenberg", "create-block-theme"]
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "gutenberg"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "create-block-theme"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+      "step": "activateTheme",
+      "themeFolderName": "plain-pauli"
+    	},
+	{
+		"step": "login"
+	},
+	{
+			"step": "updateUserMeta",
+			"meta": {
+				"first_name": "Birgit",
+				"last_name": "Pauli-Haack",
+				"admin_color": "modern"
+			},
+			"userId": 1
+		}
+	]
 }
