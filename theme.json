@@ -12,6 +12,21 @@
 					"color": "#fefadd",
 					"name": "light yellow",
 					"slug": "custom-light-yellow"
+				},
+				{
+					"color": "#565050",
+					"name": "dark grey",
+					"slug": "custom-dark-grey"
+				},
+				{
+					"color": "#954cf6",
+					"name": "light purple",
+					"slug": "custom-light-purple"
+				},
+				{
+					"color": "#f3f3f3",
+					"name": "light gray",
+					"slug": "custom-light-gray"
 				}
 			]
 		},
@@ -88,5 +103,5 @@
 		}
 	],
 	"version": 3,
-	"$schema": "https://schemas.wp.org/trunk/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
 }
