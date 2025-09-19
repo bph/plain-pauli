@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Walnut Border",
+    "slug": "walnut-border",
+	"blockTypes": [ "core/accordion" ],
+	"styles": {
+            "border": {
+                    "color": "#9f7462",
+                    "style": "solid",
+                    "width": "4px",
+                    "radius": "15px"
+                },
+            "shadow": "var(--wp--preset--shadow--natural)",
+            "elements": {
+                "h3": {
+                    "color": {
+                       "text": "#0f2a7b"
+                    },
+                    "typography": {
+                        "fontSize": "1.5rem",
+                        "fontWeight": "600"
+                    }
+                }
+            },
+            "blocks": {
+                "core/paragraph":{
+                    "spacing": {
+                        "padding": {
+                            "left": "10px",
+                            "right": "10px"
+                        }
+                 }
+                },
+                "core/accordion-panel": {
+                    "color": {
+                        "background": "var(--wp--preset--color--custom-light-yellow)"
+                    }
+                },
+                "core/accordion-header":{
+                    "spacing":{
+                            "padding": {
+                                "top": "0px",
+                                "bottom": "0px",
+                                "left": "10px",
+                                "right": "10px"
+                            }
+                    },
+                    "color": {
+                        "background": "#f0d584"
+                    }
+                }
+    }
+}
+}
