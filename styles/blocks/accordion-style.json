@@ -49,6 +49,13 @@
                     "color": {
                         "background": "#f0d584"
                     }
+                },
+                "core/accordion-content": {
+                    "spacing": {
+                        "margin": {
+                            "top": 0
+                        }
+                    }
                 }
     }
 }
