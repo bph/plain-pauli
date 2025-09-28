@@ -27,6 +27,11 @@
 					"color": "#f3f3f3",
 					"name": "light gray",
 					"slug": "custom-light-gray"
+				},
+				{
+					"color": "#1ae052",
+					"name": "green",
+					"slug": "custom-green"
 				}
 			]
 		},
