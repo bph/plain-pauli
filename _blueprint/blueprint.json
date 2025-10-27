@@ -27,20 +27,13 @@
 			}
 		},
 		{
-      "step": "activateTheme",
-      "themeFolderName": "plain-pauli"
-    	},
-	{
-		"step": "login"
-	},
-	{
-			"step": "updateUserMeta",
-			"meta": {
-				"first_name": "Birgit",
-				"last_name": "Pauli-Haack",
-				"admin_color": "modern"
-			},
-			"userId": 1
-		}
+				"step": "updateUserMeta",
+				"meta": {
+					"first_name": "Birgit",
+					"last_name": "Pauli-Haack",
+					"admin_color": "modern"
+				},
+				"userId": 1
+			}
 	]
 }
