@@ -9,7 +9,7 @@
                     "color": "#9f7462",
                     "style": "solid",
                     "width": "4px",
-                    "radius": "15px"
+                    "radius": "10px"
                 },
             "shadow": "var(--wp--preset--shadow--natural)",
             "elements": {
@@ -20,6 +20,14 @@
                     "typography": {
                         "fontSize": "1.5rem",
                         "fontWeight": "600"
+                    },
+                    "spacing": {
+                        "padding": {
+                            "top": "2px",
+                            "bottom": "2px",
+                            "left": "10px"
+
+                        }
                     }
                 }
             },
@@ -37,7 +45,7 @@
                         "background": "var(--wp--preset--color--custom-light-yellow)"
                     }
                 },
-                "core/accordion-header":{
+                "core/accordion-heading":{
                     "spacing":{
                             "padding": {
                                 "top": "0px",
@@ -50,10 +58,10 @@
                         "background": "#f0d584"
                     }
                 },
-                "core/accordion-content": {
+                "core/accordion-item": {
                     "spacing": {
                         "margin": {
-                            "top": "0"
+                            "top": "0px"
                         }
                     }
                 }
