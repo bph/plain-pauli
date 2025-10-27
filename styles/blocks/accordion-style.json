@@ -53,7 +53,7 @@
                 "core/accordion-content": {
                     "spacing": {
                         "margin": {
-                            "top": 0
+                            "top": "0"
                         }
                     }
                 }
