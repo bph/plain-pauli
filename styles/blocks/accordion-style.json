@@ -43,6 +43,12 @@
                 "core/accordion-panel": {
                     "color": {
                         "background": "var(--wp--preset--color--custom-light-yellow)"
+                    },
+                    "spacing": {
+                        "margin": {
+                            "bottom": "0px",
+                            "top": "0px"
+                        }
                     }
                 },
                 "core/accordion-heading":{
@@ -58,11 +64,15 @@
                         "background": "#f0d584"
                     }
                 },
-                "core/accordion-item": {
-                    "spacing": {
-                        "margin": {
-                            "top": "0px"
-                        }
+                "core/accordion-items":{
+                    "spacing":{
+                            "padding": {
+                                "top": "0px",
+                                "bottom": "0px"
+                            }
+                    },
+                    "color": {
+                        "background": "#f0d584"
                     }
                 }
     }
