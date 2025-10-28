@@ -6,9 +6,6 @@
 	"blockTypes": [ "core/accordion" ],
 	"styles": {
             "css": "& .wp-block-accordion-item { margin-top: 0; margin-bottom: 0; }",
-            "spacing": {
-                "blockGap": "0"
-            },
             "border": {
                     "color": "#9f7462",
                     "style": "solid",
@@ -51,6 +48,7 @@
                     }
                 },
                 "core/accordion-heading":{
+                    "css": "&__toggle { padding-left: 10px; }",
                     "color": {
                         "background": "#f0d584"
                     }
