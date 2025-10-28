@@ -5,7 +5,7 @@
     "slug": "walnut-border",
 	"blockTypes": [ "core/accordion" ],
 	"styles": {
-            "css": "& .wp-block-accordion-item { margin-top: 0; margin-bottom: 0; }",
+            "css": "& .wp-block-accordion-item { margin-top: 0; margin-bottom: 0;}",
             "border": {
                     "color": "#9f7462",
                     "style": "solid",
@@ -33,6 +33,9 @@
                         }
                     }
                 },
+                "core/accordion":{
+                    "css": "contain: paint;overflow: hidden"
+                },
                 "core/accordion-panel": {
                     "color": {
                         "background": "var(--wp--preset--color--custom-light-yellow)"
@@ -51,7 +54,20 @@
                     "css": "&__toggle { padding-left: 10px; }",
                     "color": {
                         "background": "#f0d584"
+                    },
+                    "spacing": {
+                        "padding":  {
+                        "left": "10px"
+                        }
+                    },
+                    "border":{
+                        "bottom": {
+                            "style": "solid",
+                            "color": "#9f7462",
+                            "width": "1px"
+                        }
                     }
+                    
                 }
             }
         }
