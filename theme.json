@@ -1,6 +1,6 @@
 {
 	
-	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"settings": {
 		"appearanceTools": true,
@@ -71,8 +71,32 @@
 				}
 			]
 		},
-		"useRootPaddingAwareAlignments": true
-	},
+		"useRootPaddingAwareAlignments": true,
+		"blocks":{
+			"core/gallery":{
+				"dimensions":{
+					"defaultAspectRatios":false,
+					"aspectRatios": [
+							{
+					"name": "Square - 1:1",
+					"slug": "square",
+					"ratio": "1"
+					},
+					{
+					"name": "Wide - 16:9",
+					"slug": "16-9",
+					"ratio": "16/9"
+					},
+					{
+					"name": "Tall - 9:16",
+					"slug": "9-16",
+					"ratio": "9/16"
+					}
+				]
+			}			
+		}
+	}
+},
 	"styles": {
 		"blocks": {
 			"core/button": {
