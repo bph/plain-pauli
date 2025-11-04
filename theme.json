@@ -73,6 +73,40 @@
 		},
 		"useRootPaddingAwareAlignments": true,
 		"blocks":{
+			"core/image": {
+				"color": {
+					"defaultDuotone": false,
+					"duotone": [
+						{
+							"name": "Dark grayscale",
+							"colors": [ "#000000", "#7f7f7f" ],
+							"slug": "dark-grayscale"
+						}
+					]
+				},
+				"shadow": {
+					"defaultPresets": false,
+					"presets": [
+						{
+							"name": "Natural",
+							"slug": "natural",
+							"shadow": "6px 6px 9px rgba(0, 0, 0, 0.2)"
+						}
+					]
+				}
+			},
+			"core/paragraph": {
+				"typography": {
+					"defaultFontSizes": false,
+					"fontSizes": [
+						{
+							"name": "Small",
+							"slug": "small",
+							"size": "13px"
+						}
+					]
+				}
+			},
 			"core/gallery":{
 				"dimensions":{
 					"defaultAspectRatios":false,
