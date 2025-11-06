@@ -120,11 +120,6 @@
 					"name": "Wide - 16:9",
 					"slug": "16-9",
 					"ratio": "16/9"
-					},
-					{
-					"name": "Tall - 9:16",
-					"slug": "9-16",
-					"ratio": "9/16"
 					}
 				]
 			}			
@@ -132,11 +127,23 @@
 	}
 },
 	"styles": {
+		"elements": {
+			"link": {
+				"color": {
+				"text": "#0073aa"
+				},
+				":hover": {
+				"color": {
+					"text": "#005a87"
+				}
+				}
+			}
+		},
 		"blocks": {
 			"core/button": {
 				"variations": {
 					"outline": {
-						"border": {
+						"border": {	
 							"color": "blue",
 							"radius": "0",
 							"style": "solid",
