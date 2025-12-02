@@ -1,9 +1,62 @@
 {
-	
-	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"version": 3,
 	"settings": {
 		"appearanceTools": true,
+		"blocks": {
+			"core/gallery": {
+				"dimensions": {
+					"aspectRatios": [
+						{
+							"name": "Square - 1:1",
+							"ratio": "1",
+							"slug": "square"
+						},
+						{
+							"name": "Wide - 16:9",
+							"ratio": "16/9",
+							"slug": "16-9"
+						}
+					],
+					"defaultAspectRatios": false
+				}
+			},
+			"core/image": {
+				"color": {
+					"defaultDuotone": false,
+					"duotone": [
+						{
+							"colors": [
+								"#000000",
+								"#7f7f7f"
+							],
+							"name": "Dark grayscale",
+							"slug": "dark-grayscale"
+						}
+					]
+				},
+				"shadow": {
+					"defaultPresets": false,
+					"presets": [
+						{
+							"name": "Natural",
+							"shadow": "6px 6px 9px rgba(0, 0, 0, 0.2)",
+							"slug": "natural"
+						}
+					]
+				}
+			},
+			"core/paragraph": {
+				"typography": {
+					"defaultFontSizes": false,
+					"fontSizes": [
+						{
+							"name": "Small",
+							"size": "13px",
+							"slug": "small"
+						}
+					]
+				}
+			}
+		},
 		"color": {
 			"palette": [
 				{
@@ -52,7 +105,7 @@
 			]
 		},
 		"spacing": {
-			"blockGap":false,
+			"blockGap": false,
 			"units": [
 				"%",
 				"px",
@@ -71,79 +124,14 @@
 				}
 			]
 		},
-		"useRootPaddingAwareAlignments": true,
-		"blocks":{
-			"core/image": {
-				"color": {
-					"defaultDuotone": false,
-					"duotone": [
-						{
-							"name": "Dark grayscale",
-							"colors": [ "#000000", "#7f7f7f" ],
-							"slug": "dark-grayscale"
-						}
-					]
-				},
-				"shadow": {
-					"defaultPresets": false,
-					"presets": [
-						{
-							"name": "Natural",
-							"slug": "natural",
-							"shadow": "6px 6px 9px rgba(0, 0, 0, 0.2)"
-						}
-					]
-				}
-			},
-			"core/paragraph": {
-				"typography": {
-					"defaultFontSizes": false,
-					"fontSizes": [
-						{
-							"name": "Small",
-							"slug": "small",
-							"size": "13px"
-						}
-					]
-				}
-			},
-			"core/gallery":{
-				"dimensions":{
-					"defaultAspectRatios":false,
-					"aspectRatios": [
-							{
-					"name": "Square - 1:1",
-					"slug": "square",
-					"ratio": "1"
-					},
-					{
-					"name": "Wide - 16:9",
-					"slug": "16-9",
-					"ratio": "16/9"
-					}
-				]
-			}			
-		}
-	}
-},
+		"useRootPaddingAwareAlignments": true
+	},
 	"styles": {
-		"elements": {
-			"link": {
-				"color": {
-				"text": "#0073aa"
-				},
-				":hover": {
-				"color": {
-					"text": "#005a87"
-				}
-				}
-			}
-		},
 		"blocks": {
 			"core/button": {
 				"variations": {
 					"outline": {
-						"border": {	
+						"border": {
 							"color": "blue",
 							"radius": "0",
 							"style": "solid",
@@ -164,6 +152,18 @@
 					}
 				}
 			}
+		},
+		"elements": {
+			"link": {
+				":hover": {
+					"color": {
+						"text": "#005a87"
+					}
+				},
+				"color": {
+					"text": "#0073aa"
+				}
+			}
 		}
 	},
 	"templateParts": [
@@ -175,5 +175,7 @@
 			"area": "footer",
 			"name": "footer"
 		}
-	]
+	],
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
 }
