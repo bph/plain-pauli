@@ -1,0 +1,20 @@
+name: PR Preview
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Post Playground Preview Button
+        uses: WordPress/action-wp-playground-pr-preview@v2
+        with:
+          # Theme is in repository root
+          theme-path: .
+          # Add the button to the PR description
+          mode: "append-to-description"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
