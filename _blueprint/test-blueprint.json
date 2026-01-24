@@ -1,0 +1,25 @@
+ { "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {},
+  "login": true,
+  "plugins": ["gutenberg","create-block-theme"],
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "git:directory",
+        "url": "https://github.com/bph/plain-pauli",
+        "ref": "HEAD"
+      },
+      "options": {
+        "activate": true
+      },
+      "progress": {
+        "caption": "Installing theme from GitHub: bph/plain-pauli"
+      }
+    }
+  ]
+}
