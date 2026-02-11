@@ -73,6 +73,9 @@
 		},
 		"useRootPaddingAwareAlignments": true,
 		"blocks":{
+			"core/post-title": {
+				"css": "letter-spacing: 1px; background-color: var(--wp--preset--color--custom-light-yellow); padding: 10px;"
+			}
 			"core/image": {
 				"color": {
 					"defaultDuotone": false,
